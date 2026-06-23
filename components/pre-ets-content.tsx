@@ -15,6 +15,14 @@ const categoriesEn = [
   { label: 'Counseling on Post-Secondary Opportunities', icon: GraduationCap },
 ]
 
+const categoriesEs = [
+  { label: 'Carrera de Exploración', icon: Compass },
+  { label: 'Autodefensa', icon: Megaphone },
+  { label: 'Preparación Del Lugar De Trabajo', icon: Briefcase },
+  { label: 'Aprendizaje Basado En El Trabajo', icon: Lightbulb },
+  { label: 'Consejería Sobre Oportunidades Post Secundarias', icon: GraduationCap },
+]
+
 export function PreEtsContent() {
   return (
     <section className="py-16 sm:py-20">
@@ -48,6 +56,36 @@ export function PreEtsContent() {
                 </li>
               ))}
             </ul>
+
+            {/* Spanish */}
+            <div className="mt-8 border-t border-border pt-8">
+              <span className="inline-flex rounded-full bg-secondary px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand">
+                Español
+              </span>
+              <p className="mt-5 text-base leading-relaxed text-foreground">
+                El Instituto de Desarrollo Konnecting the Dots ofrecerá
+                Servicios de Transición Pre-Empleo (Pre ETS). Este programa en
+                constante evolución capacitará a los estudiantes con prácticas
+                de desarrollo, actitudinales y éticas esenciales para fomentar
+                una ciudadanía productiva. Los estudiantes deben tener entre 14
+                y 22 años. Este programa educativo se estructura en tres fases.
+              </p>
+              <h2 className="mt-7 font-heading text-lg font-semibold text-foreground">
+                Categorías:
+              </h2>
+              <ul className="mt-4 space-y-3">
+                {categoriesEs.map(({ label, icon: Icon }) => (
+                  <li key={label} className="flex items-center gap-3">
+                    <span className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-accent text-accent-warm-foreground">
+                      <Icon className="size-4" />
+                    </span>
+                    <span className="text-sm font-medium text-foreground">
+                      {label}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </article>
 
           {/* Image collage */}
