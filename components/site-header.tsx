@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu, Phone } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import { Button } from '@/components/ui/button'
+import { Button, buttonVariants } from '@/components/ui/button'
 import {
   Sheet,
   SheetContent,
@@ -57,6 +57,7 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-2">
           <Button
+            nativeButton={false}
             render={<a href={`tel:${siteConfig.phone}`} />}
             className="hidden bg-accent-warm font-semibold text-accent-warm-foreground hover:bg-accent-warm/90 lg:inline-flex"
           >
@@ -65,15 +66,14 @@ export function SiteHeader() {
           </Button>
 
           <Sheet open={open} onOpenChange={setOpen}>
-            <SheetTrigger asChild>
-              <Button
-                variant="outline"
-                size="icon"
-                className="xl:hidden"
-                aria-label="Open menu"
-              >
-                <Menu className="size-5" />
-              </Button>
+            <SheetTrigger
+              aria-label="Open menu"
+              className={cn(
+                buttonVariants({ variant: 'outline', size: 'icon' }),
+                'xl:hidden',
+              )}
+            >
+              <Menu className="size-5" />
             </SheetTrigger>
             <SheetContent side="right" className="w-[88%] max-w-sm p-0">
               <SheetTitle className="sr-only">Navigation menu</SheetTitle>
@@ -111,6 +111,7 @@ export function SiteHeader() {
               </nav>
               <div className="px-4 pb-6">
                 <Button
+                  nativeButton={false}
                   render={<a href={`tel:${siteConfig.phone}`} />}
                   className="w-full bg-accent-warm font-semibold text-accent-warm-foreground hover:bg-accent-warm/90"
                 >

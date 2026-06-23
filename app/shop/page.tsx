@@ -73,6 +73,7 @@ export default function ShopPage() {
 
                     <div className="mt-auto pt-2">
                       <Button
+                        nativeButton={false}
                         render={
                           <a href={product.buyUrl} target="_blank" rel="noopener noreferrer" />
                         }

@@ -22,6 +22,7 @@ export function Hero() {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button
+              nativeButton={false}
               render={<Link href="/about-us" />}
               size="lg"
               className="bg-brand text-brand-foreground hover:bg-brand/90"
@@ -30,6 +31,7 @@ export function Hero() {
               <ArrowRight className="size-4" />
             </Button>
             <Button
+              nativeButton={false}
               render={<a href={`tel:${siteConfig.phone}`} />}
               size="lg"
               variant="outline"

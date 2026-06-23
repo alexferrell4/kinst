@@ -26,6 +26,7 @@ export function CtaSection({
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button
+              nativeButton={false}
               render={<a href={`tel:${siteConfig.phone}`} />}
               size="lg"
               className="bg-accent-warm font-semibold text-accent-warm-foreground hover:bg-accent-warm/90"
@@ -34,6 +35,7 @@ export function CtaSection({
               {siteConfig.phone}
             </Button>
             <Button
+              nativeButton={false}
               render={<Link href="/contact-us" />}
               size="lg"
               variant="outline"
