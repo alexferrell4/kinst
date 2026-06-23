@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Image from "next/image"
+import Link from "next/link"
 import { PageHeader } from "@/components/page-header"
 import { CtaSection } from "@/components/cta-section"
 import { products } from "@/lib/products"
@@ -74,13 +75,11 @@ export default function ShopPage() {
                     <div className="mt-auto pt-2">
                       <Button
                         nativeButton={false}
-                        render={
-                          <a href={product.buyUrl} target="_blank" rel="noopener noreferrer" />
-                        }
+                        render={<Link href="/contact-us" />}
                         size="lg"
                         className="w-full sm:w-auto"
                       >
-                        {product.cta}
+                        To inquire about purchasing please contact us
                       </Button>
                     </div>
                   </div>
