@@ -11,22 +11,7 @@ import { siteConfig } from '@/lib/site'
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false)
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    const form = e.currentTarget
-    const data = new FormData(form)
-    const name = String(data.get('name') || '')
-    const email = String(data.get('email') || '')
-    const phone = String(data.get('phone') || '')
-    const message = String(data.get('message') || '')
-
-    const subject = encodeURIComponent(`Website inquiry from ${name}`)
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\n${message}`,
-    )
-    window.location.href = `mailto:${siteConfig.email}?subject=${subject}&body=${body}`
-    setSubmitted(true)
-  }
+  
 
   return (
     <iframe
