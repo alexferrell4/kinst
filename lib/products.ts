@@ -16,7 +16,7 @@ export const products: Product[] = [
   {
     slug: 'milestonesmyway',
     name: 'Milestones My Way: A Social and Mental Health Journal',
-    price: '$18.99',
+    price: '$30.00',
     image: '/images/product-journal.png',
     cta: 'Add to Cart',
     buyUrl: 'https://www.kinst.net/shop/milestonesmyway',
@@ -26,7 +26,7 @@ export const products: Product[] = [
   {
     slug: 'milestones-my-way-refresh-curriculum',
     name: 'Milestones My Way (REFRESH) Curriculum',
-    price: 'from $3,500.00',
+    price: 'from $4,000.00',
     image: '/images/product-refresh.png',
     cta: 'Purchase',
     buyUrl: 'https://www.kinst.net/shop/milestones-my-way-refresh-curriculum',
@@ -45,7 +45,7 @@ export const products: Product[] = [
   {
     slug: 'milestones-my-way-moppet-modules',
     name: 'Milestones My Way Moppet Modules',
-    price: '$2,000.00',
+    price: '$3,000.00',
     image: '/images/product-moppet.png',
     cta: 'Purchase',
     buyUrl: 'https://www.kinst.net/shop/milestones-my-way-moppet-modules',
