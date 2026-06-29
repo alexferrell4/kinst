@@ -48,11 +48,11 @@ const strategies = [
   },
   {
     icon: Dumbbell,
-    text: 'Advancing physical development through activities in martial arts, cheer, dance, yoga and physical fitness.',
+    text: 'Advancing physical development through activities in martial arts, cheer, dance, yoga and physical fitness',
   },
   {
     icon: Compass,
-    text: 'Improving behavior intervention techniques through a multisystemic counseling theory approach.',
+    text: 'Improving behavior intervention techniques through a multisystemic counseling theory approach',
   },
 ]
 
