@@ -13,7 +13,7 @@ export function Hero() {
             Serving Houston, Texas since 2017
           </span>
           <h1 className="mt-6 font-heading text-4xl font-bold leading-[1.1] text-foreground text-balance sm:text-5xl lg:text-6xl">
-            Connecting people to{' '}
+            Konnecting people to{' '}
             <span className="text-brand">growth, healing,</span> and
             opportunity.
           </h1>
