@@ -45,6 +45,19 @@ export function SiteFooter() {
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                 </svg>
               </a>
+<a
+  href={siteConfig.instagram}
+  aria-label="Instagram"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex size-9 items-center justify-center rounded-full bg-background text-brand transition-colors hover:bg-brand hover:text-brand-foreground"
+>
+  <svg viewBox="0 0 24 24" fill="currentColor" className="size-4" aria-hidden="true">
+    <path d="M7.75 2C5.126 2 3 4.126 3 6.75v10.5C3 19.874 5.126 22 7.75 22h8.5C18.874 22 21 19.874 21 17.25V6.75C21 4.126 18.874 2 16.25 2h-8.5zM19 6.75v10.5A2.75 2.75 0 0 1 16.25 20h-8.5A2.75 2.75 0 0 1 5 17.25V6.75A2.75 2.75 0 0 1 7.75 4h8.5A2.75 2.75 0 0 1 19 6.75zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm5.25-8.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z"/>
+  </svg>
+</a>
+
+
             </div>
           </div>
 

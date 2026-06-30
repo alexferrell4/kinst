@@ -13,6 +13,7 @@ export const siteConfig = {
   hours: 'Weekdays 8:00 a.m. - 6:00 p.m.',
   facebook: 'https://www.facebook.com/profile.php?id=100069315775382#',
   twitter: 'https://x.com/konnecthedots',
+  instagram: "https://instagram.com/YOUR_HANDLE",
 }
 
 export const navLinks = [

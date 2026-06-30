@@ -39,7 +39,17 @@ export default function CaseManagementPage() {
 
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+
+<div className="mb-10 flex justify-center">
+  <img
+    src="/images/casemanagement.png"
+    alt="Accepted Medicaid Insurance"
+    className="w-full max-w-md rounded-2xl object-cover"
+  />
+</div>
+
           <div className="grid gap-10 lg:grid-cols-2">
+            
             <div>
               <h2 className="font-heading text-2xl font-bold text-foreground">
                 Case Management Services will include:
@@ -66,12 +76,13 @@ export default function CaseManagementPage() {
               </p>
             </div>
 
+
             <div className="rounded-2xl border border-border bg-secondary/50 p-8">
               <h2 className="font-heading text-2xl font-bold text-foreground">
                 Accepted Medicaid Insurance:
               </h2>
               <ul className="mt-6 space-y-3">
-                {medicaid.map((plan) => (
+                {medicaid.map((plan) => ( 
                   <li
                     key={plan}
                     className="flex items-center gap-3 rounded-lg bg-card px-4 py-3 shadow-sm"
